@@ -13,6 +13,8 @@ app.use(express.json());
 //routes
 app.use("/api/v1/auth", require("./routes/authRoutes"));
 
+app.use("/api/v1/inventory", require("./routes/inventoryRoutes"));
+
 app.get("/", (req, res) => {
   res.send("Hello Wordl");
 });
