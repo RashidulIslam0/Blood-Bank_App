@@ -2,7 +2,7 @@ import React from "react";
 
 const InputType = ({
   labelText,
-  intpuType,
+  inputType,
   labelFor,
   value,
   onChange,
@@ -15,7 +15,7 @@ const InputType = ({
           {labelText}
         </label>
         <input
-          type={intpuType}
+          type={inputType}
           className="form-control"
           name={name}
           value={value}

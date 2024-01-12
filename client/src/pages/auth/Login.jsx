@@ -1,5 +1,5 @@
 import React from "react";
-import InputType from "../../components/shared/Form/InputType";
+import Form from "../../components/shared/Form/Form";
 
 const Login = () => {
   return (
@@ -9,26 +9,7 @@ const Login = () => {
           <img src="./assets/images/banner1.jpg" alt="loginImage" />
         </div>
         <div className="col-md-4 form-container">
-          <form>
-            <InputType
-              labelText={"Email"}
-              labelFor={"forEmail"}
-              intpuType={"email"}
-              name={"email"}
-            />
-            {/* <div className="mb-3">
-              <label className="form-label">Email address</label>
-              <input type="email" className="form-control" />
-            </div> */}
-            {/* <div className="mb-3">
-              <label className="form-label">Password</label>
-              <input type="password" className="form-control" />
-            </div> */}
-
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
-          </form>
+          <Form formTitle={"Login page"} submitBtn={"Login"} />
         </div>
       </div>
     </div>
