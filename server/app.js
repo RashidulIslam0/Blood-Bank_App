@@ -4,11 +4,14 @@ const morgan = require("morgan");
 require("dotenv").config();
 
 const connectDB = require("./DB/db");
+const PORT = 3000;
+
 const app = express();
 app.use(morgan("dev"));
 app.use(express.json());
 
-const PORT = 3000;
+//routes
+app.use("/api/v1/auth", require("./routes/authRoutes"));
 
 app.get("/", (req, res) => {
   res.send("Hello Wordl");
